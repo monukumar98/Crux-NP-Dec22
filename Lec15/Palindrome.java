@@ -1,10 +1,14 @@
 package Lec15;
 
+import java.util.Scanner;
+
 public class Palindrome {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String s = "nitin";
+		Scanner sc = new Scanner(System.in);
+		
+		String s =sc.next();
 		System.out.println(IsPalindrome(s));
 
 	}

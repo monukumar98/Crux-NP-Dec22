@@ -17,19 +17,19 @@ public class ArraysList_Demo {
 //		System.out.println(list.size());
 		list.add(2, 20);
 		System.out.println(list);
-		
-		// remove 
+
+		// remove
 		System.out.println(list.remove(1));
 		System.out.println(list);
 		list.add(101);
 		list.add(102);
 		System.out.println(list);
-		//get
+		// get
 		System.out.println(list.get(2));
 		// sort
+
 		Collections.sort(list);
 		System.out.println(list);
-		
 
 	}
 
