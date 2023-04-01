@@ -9,12 +9,13 @@ public class N_Knight_Problem {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		boolean[][] board = new boolean[n][n];
+		Knight(board, 0, 0, "", n);
 
 	}
 
 	public static void Knight(boolean[][] board, int cr, int cc, String ans, int tk) {
 		if (tk == 0) {
-			System.out.print(ans + "{" + cr + "-" + cc + "} ");
+			System.out.print(ans );
 			return;
 		}
 		if (cc == board.length) {
