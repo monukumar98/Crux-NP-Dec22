@@ -1,8 +1,8 @@
 package Lec28;
 
 public class Stack {
-	private int[] arr;
-	private int tos;
+	protected int[] arr;
+	protected int tos;
 
 	public Stack() {
 		// TODO Auto-generated constructor stub
