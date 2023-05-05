@@ -1,6 +1,7 @@
 package Doubt_Class_Stack;
 
-import java.util.Scanner;
+
+import java.util.*;
 
 public class Only_Ladders {
 
@@ -9,6 +10,7 @@ public class Only_Ladders {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		int[] ladder = makeladder(n);
+		//System.out.println(Arrays.toString(ladder));
 		System.out.println("\n" + Printanswer(0, n, "", ladder));
 	}
 
@@ -22,14 +24,15 @@ public class Only_Ladders {
 		}
 		int count = 0;
 		if (ladder[curr] != 0) {
-			count += Printanswer(curr + ladder[curr], end, ans + curr + " ", ladder);
+			count += Printanswer(ladder[curr], end, ans + curr + " ", ladder);
 
-		}
-		// else {
-		for (int dice = 1; dice <= 6; dice++) {
-			count += Printanswer(curr + dice, end, ans + curr + " ", ladder);
+		} 
+		else {
+			for (int dice = 1; dice <= 6; dice++) {
+				//System.out.println(curr+" "+dice);
+				count += Printanswer(curr + dice, end, ans + curr + " ", ladder);
 
-			// }
+			}
 		}
 		return count;
 
