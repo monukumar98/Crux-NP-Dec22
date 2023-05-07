@@ -1,6 +1,5 @@
 package Lec36;
 
-import Lec36.Diameter_of_Binary_Tree.TreeNode;
 
 public class Balanced_Binary_Tree {
 	public class TreeNode {
