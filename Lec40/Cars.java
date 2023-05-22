@@ -1,6 +1,6 @@
 package Lec40;
 
-public class Cars{ //implements Comparable<Cars> {
+public class Cars implements Comparable<Cars> {
 	int price;
 	int speed;
 	String color;
@@ -22,11 +22,11 @@ public class Cars{ //implements Comparable<Cars> {
 
 	}
 
-//	@Override
-//	public int compareTo(Cars o) {
-//		// TODO Auto-generated method stub
-//		// return o.price-this.price;
-//		// return this.speed-o.speed;
-//	return	this.color.compareTo(o.color);
-//	}
+	@Override
+	public int compareTo(Cars o) {
+		// TODO Auto-generated method stub
+		// return o.price-this.price;
+		return this.speed - o.speed;
+		// return this.color.compareTo(o.color);
+	}
 }
